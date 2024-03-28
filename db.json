@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "name": "Santi",
+      "age": "29",
+      "id": "13a8"
+    },
+    {
+      "id": "445d",
+      "name": "Jorgito",
+      "age": "27"
+    },
+    {
+      "id": "6560",
+      "name": "Eyder",
+      "age": "18"
+    },
+    {
+      "id": "1ac2",
+      "name": "Santiago2",
+      "age": "20"
+    },
+    {
+      "id": "c5e1",
+      "name": "prueba1",
+      "age": "40"
+    }
+  ],
+  "clients": [
+    {
+      "id": "1",
+      "name": "Jorge",
+      "age": 27
+    },
+    {
+      "id": "2",
+      "name": "Ana",
+      "age": 28
+    },
+    {
+      "id": "3",
+      "name": "Santi",
+      "age": 29
+    },
+    {
+      "id": "4",
+      "name": "Eyder",
+      "age": 18
+    }
+  ]
+}

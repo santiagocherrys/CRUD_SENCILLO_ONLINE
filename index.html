@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Json-server</title>
+</head>
+
+<body class="d-flex flex-column align-items-center justify-content-center">
+
+    <form id="form">
+        <h2>Crear o Actualizar</h2>
+        <input type="hidden" id="userId">
+        <div class="my-4">
+            <label for="userName">User Name</label>
+            <input type="text" class="form-control" id="userName" placeholder="Ingrese su nombre">
+        </div>
+        <div class="my-4">
+            <label for="userAge">User Age</label>
+            <input type="number" class="form-control" id="userAge" placeholder="Ingrese su edad">
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+
+    <h2 class="my-4">Lista Usuarios</h2>
+
+    <div>
+        <table class="table table-striped">
+            <thead> <!-- Encabezado con los titulos de columna -->
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Actions</th> <!-- Para las acciones de editar y eliminar -->
+            </thead>
+
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
