@@ -68,6 +68,8 @@ async function createUser(user) {
         },
         body: JSON.stringify(user) // Lo convertimos a string
     });
+
+    renderUsers();
 }
 
 async function updateUser(id, user) {
@@ -78,12 +80,15 @@ async function updateUser(id, user) {
         },
         body: JSON.stringify(user) // Lo convertimos a string
     });
+
+    renderUsers();
 }
 
 async function deleteUser(id) {
     await fetch(`${urlBase}/users/${id}`, {
         method: "DELETE" // se especifica el método porque por degecto es GET
     });
+    renderUsers();
 }
 
 
