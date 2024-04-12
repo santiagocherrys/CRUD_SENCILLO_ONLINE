@@ -110,6 +110,13 @@ async function renderUsers() {
         </tr>
         `;
     });
+
+    //Se resetea las variables porque no lo coge el DOM en vercel,
+    // asi hace que se pueda volver a crear usuario sin esto va a actualizar el ultimo de editar y no agregaria
+    
+    userId.value = "";
+    userAge.value = "";
+    userName.value = "";
 }
 
 //Va a ser la diferenciaentre manipular el dom y de ver el servicio que tenemos por a parte
